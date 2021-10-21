@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+@available(iOS 13, macOS 15, *)
 extension Publisher {
 	func deferredDelay <S: Scheduler> (
 		after throughputInterval: S.SchedulerTimeType.Stride,
@@ -20,6 +21,7 @@ extension Publisher {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers.DeferredDelay {
 	enum Action {
 		case wait(DispatchTime = .distantFuture)
@@ -27,6 +29,7 @@ extension Publishers.DeferredDelay {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers {
 	class DeferredDelay <Upstream: Publisher, S: Scheduler>: Publisher {
 		typealias Output = Upstream.Output
@@ -79,6 +82,7 @@ extension Publishers {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers.DeferredDelay {
 	final class Inner <Downstream: Subscriber>: Subscriber, Subscription
 	where Downstream.Input == Output, Downstream.Failure == Failure
@@ -194,6 +198,7 @@ extension Publishers.DeferredDelay {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers.DeferredDelay {
 	enum SubscriptionStatus {
 		case awaitingSubscription

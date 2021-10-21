@@ -1,5 +1,6 @@
 import Combine
 
+@available(iOS 13, macOS 15, *)
 extension Publisher {
 	public func delayedRetry <Context: Scheduler> (
 		retries: Int? = nil,
@@ -21,6 +22,7 @@ extension Publisher {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers {
 	public struct DelayedRetry<Upstream: Publisher, Context: Scheduler>: Publisher {
 		public typealias Output = Upstream.Output
@@ -72,6 +74,7 @@ extension Publishers {
 	}
 }
 
+@available(iOS 13, macOS 15, *)
 extension Publishers.DelayedRetry {
 	private final class Inner<Downstream: Subscriber>
 	: Subscriber,

@@ -1,5 +1,6 @@
 import Combine
 
+@available(iOS 13, macOS 15, *)
 enum SubscriptionStatus {
 	case awaitingSubscription
 	case subscribed(Subscription)
