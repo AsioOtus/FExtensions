@@ -18,7 +18,6 @@ let package = Package(
 			targets: ["UIKitExtensions"]
 		),
 	],
-	dependencies: [],
 	targets: [
 		.target(
 			name: "CombineExtensions",
