@@ -2,7 +2,7 @@ import Foundation
 import Combine
 
 @available(iOS 13, macOS 15, *)
-extension Publisher {
+public extension Publisher {
 	func deferredDelay <S: Scheduler> (
 		after throughputInterval: S.SchedulerTimeType.Stride,
 		for interval: S.SchedulerTimeType.Stride,
@@ -22,27 +22,19 @@ extension Publisher {
 }
 
 @available(iOS 13, macOS 15, *)
-extension Publishers.DeferredDelay {
-	enum Action {
-		case wait(DispatchTime = .distantFuture)
-		case signal
-	}
-}
-
-@available(iOS 13, macOS 15, *)
 extension Publishers {
-	class DeferredDelay <Upstream: Publisher, S: Scheduler>: Publisher {
-		typealias Output = Upstream.Output
-		typealias Failure = Upstream.Failure
+	public class DeferredDelay <Upstream: Publisher, S: Scheduler>: Publisher {
+		public typealias Output = Upstream.Output
+		public typealias Failure = Upstream.Failure
 		
-		let upstream: Upstream
+		public let upstream: Upstream
 				
-		let throughputInterval: S.SchedulerTimeType.Stride
-		let delayInterval: S.SchedulerTimeType.Stride
+		public let throughputInterval: S.SchedulerTimeType.Stride
+		public let delayInterval: S.SchedulerTimeType.Stride
 		
-		let scheduler: S
-		let tolerance: S.SchedulerTimeType.Stride
-		let options: S.SchedulerOptions?
+		public let scheduler: S
+		public let tolerance: S.SchedulerTimeType.Stride
+		public let options: S.SchedulerOptions?
 
 		init (
 			upstream: Upstream,
