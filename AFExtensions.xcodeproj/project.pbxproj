@@ -6,16 +6,60 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		3AA69A19272406D2004EA0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AA69A15272406D2004EA0AF /* UIKitExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A46521B260F9FDC0031FAD9;
+			remoteInfo = UIKitExtensions;
+		};
+		3AA69A22272406DF004EA0AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AA69A1E272406DF004EA0AF /* CombineExtensions.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A7A7866271E032C009123F7;
+			remoteInfo = CombineExtensionsTestground;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		3A76ABCE2721BD2C00CA16C1 /* AFExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AFExtensions; sourceTree = "<group>"; };
+		3AA69A15272406D2004EA0AF /* UIKitExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKitExtensions.xcodeproj; path = UIKitExtensions/UIKitExtensions.xcodeproj; sourceTree = "<group>"; };
+		3AA69A1B272406D9004EA0AF /* SwiftUIExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftUIExtensions.xcodeproj; path = SwiftUIExtensions/SwiftUIExtensions.xcodeproj; sourceTree = "<group>"; };
+		3AA69A1E272406DF004EA0AF /* CombineExtensions.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CombineExtensions.xcodeproj; path = CombineExtensions/CombineExtensions.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		3A0A00422721B98A00BD501C = {
 			isa = PBXGroup;
 			children = (
-				3A76ABCE2721BD2C00CA16C1 /* AFExtensions */,
+				3AA69A1E272406DF004EA0AF /* CombineExtensions.xcodeproj */,
+				3AA69A1B272406D9004EA0AF /* SwiftUIExtensions.xcodeproj */,
+				3AA69A15272406D2004EA0AF /* UIKitExtensions.xcodeproj */,
 			);
+			sourceTree = "<group>";
+		};
+		3AA69A16272406D2004EA0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA69A1A272406D2004EA0AF /* UIKitExtensions.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA69A1C272406D9004EA0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA69A1F272406DF004EA0AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA69A23272406DF004EA0AF /* CombineExtensionsTestground */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -37,11 +81,42 @@
 			);
 			mainGroup = 3A0A00422721B98A00BD501C;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3AA69A1F272406DF004EA0AF /* Products */;
+					ProjectRef = 3AA69A1E272406DF004EA0AF /* CombineExtensions.xcodeproj */;
+				},
+				{
+					ProductGroup = 3AA69A1C272406D9004EA0AF /* Products */;
+					ProjectRef = 3AA69A1B272406D9004EA0AF /* SwiftUIExtensions.xcodeproj */;
+				},
+				{
+					ProductGroup = 3AA69A16272406D2004EA0AF /* Products */;
+					ProjectRef = 3AA69A15272406D2004EA0AF /* UIKitExtensions.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3AA69A1A272406D2004EA0AF /* UIKitExtensions.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UIKitExtensions.framework;
+			remoteRef = 3AA69A19272406D2004EA0AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AA69A23272406DF004EA0AF /* CombineExtensionsTestground */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = CombineExtensionsTestground;
+			remoteRef = 3AA69A22272406DF004EA0AF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin XCBuildConfiguration section */
 		3A0A00472721B98A00BD501C /* Debug */ = {
