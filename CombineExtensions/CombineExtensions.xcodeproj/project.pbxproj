@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A7A786A271E032C009123F7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A7869271E032C009123F7 /* main.swift */; };
 		3A7A7874271E047E009123F7 /* Publishers.DeferredDelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A786F271E047E009123F7 /* Publishers.DeferredDelay.swift */; };
 		3A7A7876271E047E009123F7 /* SubscriptionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A7871271E047E009123F7 /* SubscriptionStatus.swift */; };
 		3A7A7877271E047E009123F7 /* Progression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A7872271E047E009123F7 /* Progression.swift */; };
 		3A7A7878271E047E009123F7 /* Publishers.DelayedRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A7873271E047E009123F7 /* Publishers.DelayedRetry.swift */; };
 		3A7A787F271E059B009123F7 /* Progressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A787E271E059B009123F7 /* Progressions.swift */; };
+		3AA69A36272429BD004EA0AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69A35272429BD004EA0AF /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,12 +29,12 @@
 
 /* Begin PBXFileReference section */
 		3A7A7866271E032C009123F7 /* CombineExtensionsTestground */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CombineExtensionsTestground; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A7A7869271E032C009123F7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3A7A786F271E047E009123F7 /* Publishers.DeferredDelay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publishers.DeferredDelay.swift; sourceTree = "<group>"; };
 		3A7A7871271E047E009123F7 /* SubscriptionStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionStatus.swift; sourceTree = "<group>"; };
 		3A7A7872271E047E009123F7 /* Progression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Progression.swift; sourceTree = "<group>"; };
 		3A7A7873271E047E009123F7 /* Publishers.DelayedRetry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publishers.DelayedRetry.swift; sourceTree = "<group>"; };
 		3A7A787E271E059B009123F7 /* Progressions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progressions.swift; sourceTree = "<group>"; };
+		3AA69A35272429BD004EA0AF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7A786E271E032F009123F7 /* Source */,
-				3A7A7868271E032C009123F7 /* CombineExtensionsTestground */,
+				3AA69A34272429BD004EA0AF /* Testground */,
 				3A7A7867271E032C009123F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,14 +63,6 @@
 				3A7A7866271E032C009123F7 /* CombineExtensionsTestground */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3A7A7868271E032C009123F7 /* CombineExtensionsTestground */ = {
-			isa = PBXGroup;
-			children = (
-				3A7A7869271E032C009123F7 /* main.swift */,
-			);
-			path = CombineExtensionsTestground;
 			sourceTree = "<group>";
 		};
 		3A7A786E271E032F009123F7 /* Source */ = {
@@ -99,6 +91,14 @@
 				3A7A7873271E047E009123F7 /* Publishers.DelayedRetry.swift */,
 			);
 			path = Publishers;
+			sourceTree = "<group>";
+		};
+		3AA69A34272429BD004EA0AF /* Testground */ = {
+			isa = PBXGroup;
+			children = (
+				3AA69A35272429BD004EA0AF /* main.swift */,
+			);
+			path = Testground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +161,9 @@
 			files = (
 				3A7A7877271E047E009123F7 /* Progression.swift in Sources */,
 				3A7A7878271E047E009123F7 /* Publishers.DelayedRetry.swift in Sources */,
+				3AA69A36272429BD004EA0AF /* main.swift in Sources */,
 				3A7A7876271E047E009123F7 /* SubscriptionStatus.swift in Sources */,
 				3A7A7874271E047E009123F7 /* Publishers.DeferredDelay.swift in Sources */,
-				3A7A786A271E032C009123F7 /* main.swift in Sources */,
 				3A7A787F271E059B009123F7 /* Progressions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

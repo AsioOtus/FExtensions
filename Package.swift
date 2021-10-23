@@ -23,10 +23,6 @@ let package = Package(
 			name: "CombineExtensions",
 			path: "CombineExtensions/Source"
 		),
-		.executableTarget(
-			name: "CombineExtensionsTestground",
-			path: "CombineExtensions/Testground"
-		),
 		.target(
 			name: "SwiftUIExtensions",
 			path: "SwiftUIExtensions/Source"
