@@ -1,9 +1,10 @@
 import UIKit
 
-protocol StoryboardCreatable: UIViewController { }
+public protocol StoryboardCreatable: UIViewController {
+	static var storyboardName: String { get }
+}
 
-extension StoryboardCreatable {
-	static var storyboardName: String { String(describing: Self.self) }
+public extension StoryboardCreatable {
 	static var storyboard: UIStoryboard { UIStoryboard(name: storyboardName, bundle: nil) }
 	
 	static func fromStoryboard () -> Self {

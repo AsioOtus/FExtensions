@@ -1,22 +1,22 @@
 import UIKit
 
-
-
-class BackgroundTask {
+public class BackgroundTask {
 	private var backgroundTask: UIBackgroundTaskIdentifier = .invalid
 	
-	func start () {
+	public init () { }
+	
+	public func start () {
 		backgroundTask = UIApplication.shared.beginBackgroundTask {
 			self.end()
 		}
 	}
 	
-	func end () {
+	public func end () {
 		UIApplication.shared.endBackgroundTask(backgroundTask)
 		backgroundTask = .invalid
 	}
 	
-	func restart () {
+	public func restart () {
 		if backgroundTask == .invalid {
 			start()
 		}

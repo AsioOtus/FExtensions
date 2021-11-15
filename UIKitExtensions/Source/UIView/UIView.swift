@@ -1,7 +1,7 @@
 import UIKit
 
-extension UIView {
-	func pinToBounds (_ view: UIView) {
+public extension UIView {
+	func pinBounds (to view: UIView) {
 		translatesAutoresizingMaskIntoConstraints = false
 		
 		NSLayoutConstraint.activate([

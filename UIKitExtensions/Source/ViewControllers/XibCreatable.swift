@@ -1,8 +1,11 @@
 import UIKit
 
-protocol XibCreatable: UIViewController { }
+public protocol XibCreatable: UIViewController {
+	static var xibName: String { get }
+	static func fromXib () -> Self 
+}
 
-extension XibCreatable {
+public extension XibCreatable {
 	static var xibName: String { String(describing: Self.self) }
 	
 	static func fromXib () -> Self {

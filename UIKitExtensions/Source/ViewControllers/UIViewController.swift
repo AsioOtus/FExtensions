@@ -1,6 +1,6 @@
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
 	func insertFullframeChild (
 		_ childVC: UIViewController,
 		_ view: UIView? = nil,
@@ -11,7 +11,7 @@ extension UIViewController {
 			
 			self.addChild(childVC)
 			containerView.insertSubview(childVC.view, at: index)
-			childVC.view.pinToBounds(containerView)
+			childVC.view.pinBounds(to: containerView)
 			childVC.didMove(toParent: self)
 		}
 	}
