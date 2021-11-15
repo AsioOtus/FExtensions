@@ -24,7 +24,9 @@ public class WrappingHStackViewController: UIViewController {
 	public	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		_ = view.safeAreaLayoutGuide // Magic call, do not remove
+		if #available(iOS 11, *) {
+			_ = view.safeAreaLayoutGuide // Magic call, do not remove
+		}
 		
 		integrateItems()
 	}
