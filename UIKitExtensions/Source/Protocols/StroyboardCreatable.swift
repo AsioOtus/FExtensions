@@ -5,9 +5,10 @@ public protocol StoryboardCreatable: UIViewController {
 }
 
 public extension StoryboardCreatable {
+	static var storyboardIdentifier: String { String(describing: Self.self) }
 	static var storyboard: UIStoryboard { UIStoryboard(name: storyboardName, bundle: nil) }
 	
 	static func fromStoryboard () -> Self {
-		storyboard.instantiateViewController(Self.self)
+		storyboard.instantiateViewController(storyboardIdentifier)
 	}
 }

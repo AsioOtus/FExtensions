@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A465224260F9FE20031FAD9 /* XibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4651AC260F65EB0031FAD9 /* XibCreatable.swift */; };
 		3A465225260F9FE20031FAD9 /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A396E9925BDA1CD00B110C7 /* UIStoryboard.swift */; };
-		3A465226260F9FE20031FAD9 /* TypifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A582260F519D00708E24 /* TypifyView.swift */; };
+		3A465226260F9FE20031FAD9 /* TypifyRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22A582260F519D00708E24 /* TypifyRootView.swift */; };
 		3A465228260F9FE20031FAD9 /* StroyboardCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4651AD260F65F90031FAD9 /* StroyboardCreatable.swift */; };
 		3A465230260FA0700031FAD9 /* OverlappingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46522C260FA0700031FAD9 /* OverlappingViewController.swift */; };
 		3A465231260FA0700031FAD9 /* OverlappedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46522D260FA0700031FAD9 /* OverlappedViewController.swift */; };
@@ -20,11 +20,13 @@
 		3A46523A260FA0CB0031FAD9 /* Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A465237260FA0CB0031FAD9 /* Completion.swift */; };
 		3A46523E260FA1130031FAD9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46523D260FA1130031FAD9 /* UIViewController.swift */; };
 		3A465241260FA1210031FAD9 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A465240260FA1210031FAD9 /* UIView.swift */; };
-		3AF702A4273447BE0087F39A /* WrappingHStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF702A3273447BE0087F39A /* WrappingHStackViewController.swift */; };
+		3AD82BC3275952A7000EF242 /* NSLayotConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC2275952A7000EF242 /* NSLayotConstraint.swift */; };
+		3AD82BC727595366000EF242 /* AxleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC627595366000EF242 /* AxleView.swift */; };
+		3AD82BC927598305000EF242 /* WrappingHStackUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC827598305000EF242 /* WrappingHStackUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A22A582260F519D00708E24 /* TypifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypifyView.swift; sourceTree = "<group>"; };
+		3A22A582260F519D00708E24 /* TypifyRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypifyRootView.swift; sourceTree = "<group>"; };
 		3A396E9925BDA1CD00B110C7 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
 		3A4651AC260F65EB0031FAD9 /* XibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibCreatable.swift; sourceTree = "<group>"; };
 		3A4651AD260F65F90031FAD9 /* StroyboardCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroyboardCreatable.swift; sourceTree = "<group>"; };
@@ -38,7 +40,9 @@
 		3A465237260FA0CB0031FAD9 /* Completion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Completion.swift; sourceTree = "<group>"; };
 		3A46523D260FA1130031FAD9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		3A465240260FA1210031FAD9 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		3AF702A3273447BE0087F39A /* WrappingHStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStackViewController.swift; sourceTree = "<group>"; };
+		3AD82BC2275952A7000EF242 /* NSLayotConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayotConstraint.swift; sourceTree = "<group>"; };
+		3AD82BC627595366000EF242 /* AxleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxleView.swift; sourceTree = "<group>"; };
+		3AD82BC827598305000EF242 /* WrappingHStackUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStackUIView.swift; sourceTree = "<group>"; };
 		3AF702AB273449AF0087F39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,30 +69,19 @@
 		3A396E9725BDA1CD00B110C7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3AD82BC127595299000EF242 /* Extensions */,
 				3AF702A82734488E0087F39A /* Other */,
-				3A396E9825BDA1CD00B110C7 /* UIStoryboard */,
+				3AD82BC527595359000EF242 /* Protocols */,
 				3AF702A9273448A60087F39A /* UIView */,
 				3A396E9C25BDA1CD00B110C7 /* ViewControllers */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		3A396E9825BDA1CD00B110C7 /* UIStoryboard */ = {
-			isa = PBXGroup;
-			children = (
-				3A396E9925BDA1CD00B110C7 /* UIStoryboard.swift */,
-			);
-			path = UIStoryboard;
-			sourceTree = "<group>";
-		};
 		3A396E9C25BDA1CD00B110C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				3A46522B260FA0700031FAD9 /* OverlapViewController */,
-				3A4651AD260F65F90031FAD9 /* StroyboardCreatable.swift */,
-				3A46523D260FA1130031FAD9 /* UIViewController.swift */,
-				3AF702A3273447BE0087F39A /* WrappingHStackViewController.swift */,
-				3A4651AC260F65EB0031FAD9 /* XibCreatable.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -112,6 +105,27 @@
 			path = OverlapViewController;
 			sourceTree = "<group>";
 		};
+		3AD82BC127595299000EF242 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AD82BC2275952A7000EF242 /* NSLayotConstraint.swift */,
+				3A396E9925BDA1CD00B110C7 /* UIStoryboard.swift */,
+				3A465240260FA1210031FAD9 /* UIView.swift */,
+				3A46523D260FA1130031FAD9 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AD82BC527595359000EF242 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3A4651AD260F65F90031FAD9 /* StroyboardCreatable.swift */,
+				3A4651AC260F65EB0031FAD9 /* XibCreatable.swift */,
+				3A22A582260F519D00708E24 /* TypifyRootView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		3AF702A82734488E0087F39A /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,8 +139,8 @@
 		3AF702A9273448A60087F39A /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				3A465240260FA1210031FAD9 /* UIView.swift */,
-				3A22A582260F519D00708E24 /* TypifyView.swift */,
+				3AD82BC627595366000EF242 /* AxleView.swift */,
+				3AD82BC827598305000EF242 /* WrappingHStackUIView.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -217,18 +231,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A465241260FA1210031FAD9 /* UIView.swift in Sources */,
+				3AD82BC927598305000EF242 /* WrappingHStackUIView.swift in Sources */,
 				3A465231260FA0700031FAD9 /* OverlappedViewController.swift in Sources */,
+				3AD82BC3275952A7000EF242 /* NSLayotConstraint.swift in Sources */,
 				3A465228260F9FE20031FAD9 /* StroyboardCreatable.swift in Sources */,
 				3A46523E260FA1130031FAD9 /* UIViewController.swift in Sources */,
 				3A465225260F9FE20031FAD9 /* UIStoryboard.swift in Sources */,
 				3A465233260FA0700031FAD9 /* TypifyOverlapViewController.swift in Sources */,
 				3A465230260FA0700031FAD9 /* OverlappingViewController.swift in Sources */,
-				3A465226260F9FE20031FAD9 /* TypifyView.swift in Sources */,
-				3AF702A4273447BE0087F39A /* WrappingHStackViewController.swift in Sources */,
+				3A465226260F9FE20031FAD9 /* TypifyRootView.swift in Sources */,
 				3A465224260F9FE20031FAD9 /* XibCreatable.swift in Sources */,
 				3A465238260FA0CB0031FAD9 /* Animation.swift in Sources */,
 				3A465239260FA0CB0031FAD9 /* BackgroundTask.swift in Sources */,
 				3A46523A260FA0CB0031FAD9 /* Completion.swift in Sources */,
+				3AD82BC727595366000EF242 /* AxleView.swift in Sources */,
 				3A465232260FA0700031FAD9 /* OverlapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

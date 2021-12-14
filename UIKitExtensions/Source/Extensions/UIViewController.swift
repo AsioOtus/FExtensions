@@ -11,7 +11,7 @@ public extension UIViewController {
 			
 			self.addChild(childVC)
 			containerView.insertSubview(childVC.view, at: index)
-			childVC.view.pinBounds(to: containerView)
+			containerView.pinBounds(to: childVC.view)
 			childVC.didMove(toParent: self)
 		}
 	}
