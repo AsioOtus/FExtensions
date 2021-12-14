@@ -23,6 +23,7 @@
 		3AD82BC3275952A7000EF242 /* NSLayotConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC2275952A7000EF242 /* NSLayotConstraint.swift */; };
 		3AD82BC727595366000EF242 /* AxleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC627595366000EF242 /* AxleView.swift */; };
 		3AD82BC927598305000EF242 /* WrappingHStackUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD82BC827598305000EF242 /* WrappingHStackUIView.swift */; };
+		A063FBFA2768FB4400E3DFC2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A063FBF92768FB4400E3DFC2 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		3AD82BC627595366000EF242 /* AxleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AxleView.swift; sourceTree = "<group>"; };
 		3AD82BC827598305000EF242 /* WrappingHStackUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappingHStackUIView.swift; sourceTree = "<group>"; };
 		3AF702AB273449AF0087F39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A063FBF92768FB4400E3DFC2 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		3AD82BC127595299000EF242 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A063FBF92768FB4400E3DFC2 /* UIColor.swift */,
 				3AD82BC2275952A7000EF242 /* NSLayotConstraint.swift */,
 				3A396E9925BDA1CD00B110C7 /* UIStoryboard.swift */,
 				3A465240260FA1210031FAD9 /* UIView.swift */,
@@ -236,6 +239,7 @@
 				3AD82BC3275952A7000EF242 /* NSLayotConstraint.swift in Sources */,
 				3A465228260F9FE20031FAD9 /* StroyboardCreatable.swift in Sources */,
 				3A46523E260FA1130031FAD9 /* UIViewController.swift in Sources */,
+				A063FBFA2768FB4400E3DFC2 /* UIColor.swift in Sources */,
 				3A465225260F9FE20031FAD9 /* UIStoryboard.swift in Sources */,
 				3A465233260FA0700031FAD9 /* TypifyOverlapViewController.swift in Sources */,
 				3A465230260FA0700031FAD9 /* OverlappingViewController.swift in Sources */,
