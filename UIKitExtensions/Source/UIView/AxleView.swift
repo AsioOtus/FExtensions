@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 12, *)
 public class AxleView: UIView {
 	private var axisX: UIView!
 	private var axisY: UIView!
