@@ -31,6 +31,7 @@ public class AxleView: UIView {
 	}
 }
 
+@available(iOS 12, *)
 private extension AxleView {
 	static func mainColor (_ style: UIUserInterfaceStyle) -> UIColor {
 		switch style {
