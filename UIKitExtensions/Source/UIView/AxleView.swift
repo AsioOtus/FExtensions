@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 12, *)
 public class AxleView: UIView {
 	private var axisX: UIView!
 	private var axisY: UIView!
@@ -30,6 +31,7 @@ public class AxleView: UIView {
 	}
 }
 
+@available(iOS 12, *)
 private extension AxleView {
 	static func mainColor (_ style: UIUserInterfaceStyle) -> UIColor {
 		switch style {
