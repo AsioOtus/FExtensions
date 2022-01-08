@@ -23,7 +23,7 @@ open class ColorViewController: UIViewController {
 		return label
 	}()
 	
-	public init (name: String, backgroundColor: UIColor, foregroundColor: UIColor = .black, action: @escaping () -> Void) {
+	public init (name: String = "", backgroundColor: UIColor, foregroundColor: UIColor = .black, action: @escaping () -> Void = { }) {
 		self.backgroundColor = backgroundColor.new(alpha: 0.5)
 		self.foregroundColor = foregroundColor
 		self.name = name
