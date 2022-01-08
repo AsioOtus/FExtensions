@@ -3,10 +3,10 @@ import UIKit
 public typealias ColorVC = ColorViewController
 
 open class ColorViewController: UIViewController {
-	private let backgroundColor: UIColor
-	private let foregroundColor: UIColor
-	private let name: String
-	private let action: () -> Void
+	public let backgroundColor: UIColor
+	public let foregroundColor: UIColor
+	public let name: String
+	public let action: () -> Void
 	
 	private let actionButton: UIButton = {
 		let button = UIButton()
