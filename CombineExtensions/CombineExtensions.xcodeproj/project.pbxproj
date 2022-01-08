@@ -13,6 +13,7 @@
 		3A7A7878271E047E009123F7 /* Publishers.DelayedRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A7873271E047E009123F7 /* Publishers.DelayedRetry.swift */; };
 		3A7A787F271E059B009123F7 /* Progressions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A787E271E059B009123F7 /* Progressions.swift */; };
 		3AA69A36272429BD004EA0AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA69A35272429BD004EA0AF /* main.swift */; };
+		A0FF9D262787A1E1001F0003 /* Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FF9D252787A1E1001F0003 /* Publisher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		3A7A7873271E047E009123F7 /* Publishers.DelayedRetry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Publishers.DelayedRetry.swift; sourceTree = "<group>"; };
 		3A7A787E271E059B009123F7 /* Progressions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progressions.swift; sourceTree = "<group>"; };
 		3AA69A35272429BD004EA0AF /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A0FF9D252787A1E1001F0003 /* Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Publisher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		3A7A786E271E032F009123F7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A0FF9D242787A1D8001F0003 /* Extensions */,
 				3A7A787C271E0517009123F7 /* Models */,
 				3A7A787D271E0573009123F7 /* Publishers */,
 			);
@@ -99,6 +102,14 @@
 				3AA69A35272429BD004EA0AF /* main.swift */,
 			);
 			path = Testground;
+			sourceTree = "<group>";
+		};
+		A0FF9D242787A1D8001F0003 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0FF9D252787A1E1001F0003 /* Publisher.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				3A7A7876271E047E009123F7 /* SubscriptionStatus.swift in Sources */,
 				3A7A7874271E047E009123F7 /* Publishers.DeferredDelay.swift in Sources */,
 				3A7A787F271E059B009123F7 /* Progressions.swift in Sources */,
+				A0FF9D262787A1E1001F0003 /* Publisher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
