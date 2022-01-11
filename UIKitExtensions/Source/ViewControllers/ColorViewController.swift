@@ -6,7 +6,14 @@ public extension UIColor {
 	func colorVC (name: String = "", foregroundColor: UIColor = .black, action: @escaping (ColorVC) -> Void = { _ in }) -> ColorVC { .init(backgroundColor: self) }
 }
 
+public extension ColorVC {
+	static var red: ColorVC { .init(backgroundColor: .red) }
+	static var green: ColorVC { .init(backgroundColor: .green) }
+	static var blue: ColorVC { .init(backgroundColor: .blue) }
+}
+
 open class ColorViewController: UIViewController {
+	private let translateMask: Bool
 	public let backgroundColor: UIColor
 	public let foregroundColor: UIColor
 	public let name: String
@@ -27,11 +34,13 @@ open class ColorViewController: UIViewController {
 		return label
 	}()
 	
-	public init (name: String = "", backgroundColor: UIColor, foregroundColor: UIColor = .black, action: @escaping (ColorViewController) -> Void = { _ in }) {
+	public init (name: String = "", backgroundColor: UIColor, foregroundColor: UIColor = .black, translateMask: Bool = false, action: @escaping (ColorViewController) -> Void = { _ in }) {
 		self.backgroundColor = backgroundColor.new(alpha: 0.5)
 		self.foregroundColor = foregroundColor
 		self.name = name
 		self.action = action
+		
+		self.translateMask = translateMask
 		
 		super.init(nibName: nil, bundle: nil)
 	}
@@ -50,7 +59,7 @@ open class ColorViewController: UIViewController {
 
 private extension ColorVC {
 	func setupView () {
-		view.translatesAutoresizingMaskIntoConstraints = false
+		view.translatesAutoresizingMaskIntoConstraints = translateMask
 		view.backgroundColor = backgroundColor
 	}
 	
