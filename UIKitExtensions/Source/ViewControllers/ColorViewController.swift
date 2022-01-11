@@ -2,6 +2,10 @@ import UIKit
 
 public typealias ColorVC = ColorViewController
 
+public extension UIColor {
+	func colorVC (name: String = "", foregroundColor: UIColor = .black, action: @escaping (ColorVC) -> Void = { _ in }) -> ColorVC { .init(backgroundColor: self) }
+}
+
 open class ColorViewController: UIViewController {
 	public let backgroundColor: UIColor
 	public let foregroundColor: UIColor
