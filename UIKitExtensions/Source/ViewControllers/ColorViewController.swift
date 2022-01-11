@@ -6,7 +6,7 @@ open class ColorViewController: UIViewController {
 	public let backgroundColor: UIColor
 	public let foregroundColor: UIColor
 	public let name: String
-	public let action: () -> Void
+	public let action: (ColorViewController) -> Void
 	
 	private let actionButton: UIButton = {
 		let button = UIButton()
@@ -23,7 +23,7 @@ open class ColorViewController: UIViewController {
 		return label
 	}()
 	
-	public init (name: String = "", backgroundColor: UIColor, foregroundColor: UIColor = .black, action: @escaping () -> Void = { }) {
+	public init (name: String = "", backgroundColor: UIColor, foregroundColor: UIColor = .black, action: @escaping (ColorViewController) -> Void = { _ in }) {
 		self.backgroundColor = backgroundColor.new(alpha: 0.5)
 		self.foregroundColor = foregroundColor
 		self.name = name
@@ -76,5 +76,5 @@ private extension ColorVC {
 }
 
 private extension ColorVC {
-	@objc func buttonTapped () { action() }
+	@objc func buttonTapped () { action(self) }
 }
