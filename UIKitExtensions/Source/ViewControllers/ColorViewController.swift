@@ -8,7 +8,7 @@ open class ColorViewController: UIViewController {
 	private let name: String
 	private let action: () -> Void
 	
-	private let actionButton: UIButton = {
+	public let actionButton: UIButton = {
 		let button = UIButton()
 		button.translatesAutoresizingMaskIntoConstraints = false
 		button.setTitle("Action", for: .normal)
@@ -16,7 +16,7 @@ open class ColorViewController: UIViewController {
 		return button
 	}()
 	
-	private let nameLabel: UILabel = {
+	public let nameLabel: UILabel = {
 		let label = UILabel()
 		label.translatesAutoresizingMaskIntoConstraints = false
 		label.font = .systemFont(ofSize: 24)
