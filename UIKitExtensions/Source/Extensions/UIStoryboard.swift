@@ -19,6 +19,8 @@ public extension UIStoryboard {
 }
 
 public extension UIStoryboard {
+	convenience init <T: StoryboardInstantiatable> (for: T.Type) { self.init(name: T.storyboardName, bundle: nil) }
+	
 	func instantiate <T: StoryboardInstantiatable> (_: T.Type) -> T {
 		instantiateViewController(withIdentifier: T.identifierInStoryboard) as! T
 	}
