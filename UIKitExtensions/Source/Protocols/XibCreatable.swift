@@ -2,6 +2,7 @@ import UIKit
 
 public protocol XibCreatable: UIViewController {
 	static var xibName: String { get }
+	
 	static func fromXib () -> Self 
 }
 

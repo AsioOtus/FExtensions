@@ -1,9 +1,6 @@
 import UIKit
 
-public protocol StoryboardInstantiatable: UIViewController {
-	static var storyboardName: String { get }
-	static var identifierInStoryboard: String { get }
-}
+public protocol StoryboardInstantiatable: UIViewController { }
 
 public extension StoryboardInstantiatable {
 	static var storyboardName: String { String(describing: Self.self) }
@@ -11,11 +8,11 @@ public extension StoryboardInstantiatable {
 	
 	static var storyboard: UIStoryboard { .init(name: storyboardName, bundle: .init(for: self)) }
 	
-	static func instantiate () -> Self {
+	static func instantiate (from storyboard: UIStoryboard = storyboard) -> Self {
 		storyboard.instantiateViewController(withIdentifier: identifierInStoryboard) as! Self
 	}
 	
-	static func instantiateInitial () -> Self {
+	static func instantiateInitial (from storyboard: UIStoryboard = storyboard) -> Self {
 		storyboard.instantiateInitialViewController() as! Self
 	}
 }
