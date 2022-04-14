@@ -5,25 +5,25 @@ public extension UIStoryboard {
 }
 
 public extension UIStoryboard {
-	func instantiateViewController <T: UIViewController> (_ storyboardIdentifier: String) -> T {
-		instantiateViewController(withIdentifier: storyboardIdentifier) as! T
+	func instantiate <T: UIViewController> (identifier: String) -> T {
+		instantiateViewController(withIdentifier: identifier) as! T
 	}
 	
-	func instantiateViewController <T: UIViewController> (_: T.Type) -> T {
+	func instantiate <T: UIViewController> (_: T.Type) -> T {
 		instantiateViewController(withIdentifier: String(describing: T.self)) as! T
 	}
 	
 	subscript <T: UIViewController> (_: T) -> T {
-		instantiateViewController(T.self)
+		instantiate(T.self)
 	}
 }
 
 public extension UIStoryboard {
-	func instantiateViewController <T: StoryboardInstantiatable> (_: T.Type) -> T {
-		instantiateViewController(withIdentifier: T.storyboardIdentifier) as! T
+	func instantiate <T: StoryboardInstantiatable> (_: T.Type) -> T {
+		instantiateViewController(withIdentifier: T.identifierInStoryboard) as! T
 	}
 
 	subscript <T: StoryboardInstantiatable> (_: T.Type) -> T {
-		instantiateViewController(T.self)
+		instantiate(T.self)
 	}
 }
