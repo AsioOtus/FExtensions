@@ -5,7 +5,7 @@ public extension UIStoryboard {
 }
 
 public extension UIStoryboard {
-	func instantiate <T: UIViewController> (identifier: String) -> T {
+	func instantiate <T: UIViewController> (_ identifier: String) -> T {
 		instantiateViewController(withIdentifier: identifier) as! T
 	}
 	
@@ -25,7 +25,7 @@ public extension UIStoryboard {
 		instantiateViewController(withIdentifier: T.identifierInStoryboard) as! T
 	}
 
-	subscript <T: StoryboardInstantiatable> (_: T.Type) -> T {
+	subscript <T: StoryboardInstantiatable> (identifiable: T.Type) -> T {
 		instantiate(T.self)
 	}
 }

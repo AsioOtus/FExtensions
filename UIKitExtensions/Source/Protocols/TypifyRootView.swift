@@ -1,11 +1,11 @@
 import UIKit
 
-public protocol TypifyRootView: UIViewController {
+public protocol TypifiableRootView: UIViewController {
 	associatedtype RootView: UIView
 	
 	var rootView: RootView { get }
 }
 
-public extension TypifyRootView {
+public extension TypifiableRootView {
 	var rootView: RootView { view as! RootView }
 }
