@@ -1,3 +1,3 @@
 import UIKit
 
-public protocol OverlappingVC: UIViewController, Overlapping { }
+public protocol OverlappingVC: UIViewController, Overlapping, OverlappingDelegate { }

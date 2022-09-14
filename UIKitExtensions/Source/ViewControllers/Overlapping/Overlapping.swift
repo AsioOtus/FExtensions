@@ -17,9 +17,4 @@ public extension Overlapping {
 
 	var showingAnimation: Animation { .init(duration: 0.5) }
 	var hidingAnimation: Animation { .init(duration: 0.5) }
-
-	func onOverlapShowingStart (completion: @escaping () -> Void) { completion() }
-	func onOverlapShowingEnd (completion: @escaping () -> Void = { }) { completion() }
-	func onOverlapHidingStart (completion: @escaping () -> Void) { completion() }
-	func onOverlapHidingEnd (completion: @escaping () -> Void = { }) { completion() }
 }
