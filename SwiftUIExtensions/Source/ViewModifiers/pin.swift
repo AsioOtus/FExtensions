@@ -6,15 +6,6 @@ struct PinnedViewModifier<V: View>: ViewModifier {
   let edge: Edge
   let view: V
 
-  var paddingEdge: Edge.Set {
-    switch edge {
-    case .leading: return .leading
-    case .top: return .top
-    case .trailing: return .trailing
-    case .bottom: return .bottom
-    }
-  }
-
   var alignment: Alignment {
     switch edge {
     case .top: return .top
@@ -36,10 +27,10 @@ struct PinnedViewModifier<V: View>: ViewModifier {
     self.view = view()
   }
 
-  func body(content: Content) -> some View {
+  func body (content: Content) -> some View {
     ZStack(alignment: alignment) {
       content
-        .padding(paddingEdge, paddingSize)
+        .padding(.init(edge), paddingSize)
 
       view
         .background {
