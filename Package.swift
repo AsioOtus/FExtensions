@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
 	name: "AFExtensions",
+  platforms: [.macOS(.v12), .iOS(.v13)],
 	products: [
 		.library(
 			name: "CombineExtensions",
