@@ -1,5 +1,6 @@
 import SwiftUI
 
+@available(iOS 15.0, macOS 13, *)
 struct PinnedViewModifier<V: View>: ViewModifier {
   @State private var paddingSize: Double = 0
 
@@ -42,12 +43,14 @@ struct PinnedViewModifier<V: View>: ViewModifier {
   }
 }
 
+@available(iOS 15.0, macOS 13, *)
 extension View {
   func pin (to edge: Edge, _ view: () -> some View) -> some View {
     modifier(PinnedViewModifier(edge: edge, view: view))
   }
 }
 
+@available(iOS 15.0, macOS 13, *)
 struct MyPreview_Previews: PreviewProvider {
   static var previews: some View {
     TabView {
