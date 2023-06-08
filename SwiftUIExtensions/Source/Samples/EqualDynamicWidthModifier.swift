@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct EqualWidthPreferenceKey: PreferenceKey {
-	static var defaultValue: CGFloat = 0
-	static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+public struct EqualWidthPreferenceKey: PreferenceKey {
+  public static var defaultValue: CGFloat = 0
+  public static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
 		value = max(value, nextValue())
 	}
 }
 
 
 
-struct EqualWidthModifier: ViewModifier {
-	@Binding var width: CGFloat?
+public struct EqualWidthModifier: ViewModifier {
+	@Binding public  var width: CGFloat?
 	
-	func body (content: Content) -> some View {
+  public func body (content: Content) -> some View {
 		content
 			.frame(width: width)
 			.background(
@@ -27,7 +27,7 @@ struct EqualWidthModifier: ViewModifier {
 	}
 }
 
-extension View {
+public extension View {
 	func equalWidth (_ width: Binding<CGFloat?>) -> some View {
 		modifier(EqualWidthModifier(width: width))
 	}

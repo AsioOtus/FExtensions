@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 15.0, macOS 13, *)
-struct PinnedViewModifier<V: View>: ViewModifier {
+public struct PinnedViewModifier<V: View>: ViewModifier {
   @State private var paddingSize: Double = 0
 
   let edge: Edge
@@ -28,7 +28,7 @@ struct PinnedViewModifier<V: View>: ViewModifier {
     self.view = view()
   }
 
-  func body (content: Content) -> some View {
+  public func body (content: Content) -> some View {
     ZStack(alignment: alignment) {
       content
         .padding(.init(edge), paddingSize)
@@ -44,7 +44,7 @@ struct PinnedViewModifier<V: View>: ViewModifier {
 }
 
 @available(iOS 15.0, macOS 13, *)
-extension View {
+public extension View {
   func pin (to edge: Edge, _ view: () -> some View) -> some View {
     modifier(PinnedViewModifier(edge: edge, view: view))
   }
